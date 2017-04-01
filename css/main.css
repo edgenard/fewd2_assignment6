@@ -1,0 +1,67 @@
+header {
+  top: 0;
+  left: 0;
+  position: fixed;
+  max-width: 50%;
+  background: #aaa;
+}
+
+#order-total {
+  float: right;
+  margin-right: 50px;
+}
+
+fieldset legend {
+  padding: 15px;
+}
+
+fieldset {
+  margin: 0 10px; 
+  border-radius: 5px;
+}
+
+.delivery-info input[type="text"], .delivery-info input[type="email"]{
+  display: block;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin: 5px;
+}
+
+form {
+  width: 400px;
+  margin: 50px auto;
+  padding: 50px;
+}
+
+.form-label  {
+  display: block;
+  padding: 9px 0 3px 0;
+}
+
+.danger {
+  border:#D9534F solid 2px;
+}
+
+.show-other-box {
+  float: left;
+}
+
+.hide-other-box {
+  display: none;
+}
+
+input {
+  border-radius: 3px;
+}
+select, input[type="submit"] {
+  display: block;
+}
+
+.form-label {
+  margin: 3px 0;
+}
+
+.clear {
+  clear: both;  
+}

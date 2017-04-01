@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 6</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!--//header with logo and order total-->
+    <header>
+        <div id="order-total">$$$</div>
+    </header>
+
+    <!--delivery location-->
+
+    <form>
+        <fieldset>
+            <legend>Delivery Address</legend>
+            <div class="delivery-info">
+                <div class="address-type">
+                    <span class="form-label">Name:</span>
+                    <input id="name" type="text">
+                    <span class="form-label">Address Type:</span>
+                    <select id="address-type">
+                        <option value="house">House</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="business">Business</option>
+                        <option value="campus">Campus</option>
+                        <option value="hotel">Hotel</option>
+                        <option value="dorm">Dorm</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <div class="hide-other-box">
+                        <span class="form-label">Other:</span>
+                        <input id="other-input" type="text">
+                    </div>
+                </div>
+                <span class="form-label clear">Street Address:</span>
+                <input id="street" type="text">
+                <span class="form-label">Apt / Ste / Floor:</span>
+                <input id="unit" type="text">
+                <span class="form-label">City:</span>
+                <input id="city" type="text">
+                <span class="form-label">State:</span>
+                <input id="state" type="text">
+                <span class="form-label">Zip Code:</span>
+                <input id="zip" type="text">
+                <span class="form-label">Phone:</span>
+                <input id="phone" type="text">
+                <span class="form-label">Email:</span>
+                <input id="email" type="email">
+            </div>
+        </fieldset>
+        <br>
+        <div id="build-pizza">
+            <fieldset>
+                <legend>Dough Options:</legend>
+                <div id="dough-options">
+                    <input id="_handTossed" type="radio" name="dough">Hand Tossed<br>
+                    <input id="_thinCrust" type="radio" name="dough">Thin Crust<br>
+                    <input id="_newYorkStyle" type="radio" name="dough">New York Style<br>
+                    <input id="_glutenFree" type="radio" name="dough">Gluten Free<br>
+                    <span class="form-label">Size and Price:</span>
+                    <select id="dough-price">
+                        <option name="default">Select Dough Option</option>
+                    </select>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Cheese Options:</legend>
+                <select id="cheese-price">
+                    <option name="default" selected="selected">Select Cheese Option</option>
+                    <option value="light" name="cheese">Light: no charge</option>
+                    <option value="normal" name="cheese">Normal: no charge</option>
+                    <option value="extra" name="cheese">Extra: +$2.99</option>
+                    <option value="double" name="cheese">Double: +$3.99</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Sauce Options:</legend>
+                <select id="sauce-price">
+                    <option name="sauce" selected="selected">Select Sauce Option</option>
+                    <option name="sauce">Regular Tomato: no charge</option>
+                    <option name="sauce">Hearty Tomato: +$.99</option>
+                    <option name="sauce">BBQ Sauce: +$1.99</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Select Toppings:</legend>
+                <div id="toppings-price">
+                    <input type="checkbox" name="pepperoni">Pepperoni<br>
+                    <input type="checkbox" name="sausage">Sausage<br>
+                    <input type="checkbox" name="ham">Ham<br>
+                    <input type="checkbox" name="bacon">Bacon<br>
+                    <input type="checkbox" name="salami">Salami<br>
+                    <input type="checkbox" name="peppers">Peppers<br>
+                    <input type="checkbox" name="olives">Olives<br>
+                    <input type="checkbox" name="jalapenos">Jalapenos<br>
+                    <input type="checkbox" name="mushrooms">Mushrooms<br>
+                    <input type="checkbox" name="pineapple">Pineapple<br>
+                    <input type="checkbox" name="onion">Onion<br>
+                </div>
+            </fieldset>
+        </div>
+    </form>
+    <!--billing information-->
+
+    <!--footer-->
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
